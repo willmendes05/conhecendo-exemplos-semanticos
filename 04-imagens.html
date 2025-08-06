@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem</title>
+</head>
+<body>
+    <hr>
+
+    <h2> trabalhando com imagens </h2>
+
+    <!--src - source (fonte ou origem do arquivo).
+        alt = alternative (alternativo). O atl serve para a acessibilidade pois quando a imagem não é carregada, o navegador busca
+        esse texto alternativo, que serve como uma descrição da imagem. quanto mais detalhes esse texto alternativo possuir, melhor a acessibilidade e experiencia do usuario.-->
+
+    <img src="cachorrinho.jpg" alt="cachorrinho peludinho">
+
+    <!--é possivel controlar a altura e a largura da imagem pelo HTML 
+    heigth(altura) = representa a altura da imagem.
+    width(largura) = representa a largura da imagem.-->
+
+    <img src="https://plus.unsplash.com/premium_photo-1753080951637-ffbdee3c44c9?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="elemento com efeito de vidro e uma mensagem de erro"
+    width="400" height="300">
+    
+
+    <hr>
+
+    <figure> 
+        <img src="cachorrinho.jpg" alt="cachorrinho peludinho">
+    
+        <figcaption> cachorrinho peludo, pequeno e fofo. by: google.com </figcaption>
+    </figure>
+
+    <picture> 
+
+        <source srcset="cachorrinho.jpg" type="image/jpg">
+        <source srcset="cachorrinho.png" type="image/png"> 
+        <source srcset="cachorrinho.jpeg" type="image/jpeg">
+<!-- fallback -->
+
+
+    </picture>
+</body>
+</html>

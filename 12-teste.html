@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <a href="tabela-horizontal-vertical.html" target="_self">Veja mais exemplos</a>
+    <!-- colspan e rowspan
+     colspan = mescla/junta colunas (horizontalmente)
+     rowspan = mescla/junta linhas (verticalmente) -->
+     <table border="1">
+        <tr>
+            <th>lastname</th>
+            <th>age</th>
+            <th>nome</th>
+            <th>sobrenome</th>
+            <th rowspan="3">idade</th>
+        </tr>
+
+        <tr>
+            <td>jill</td>
+            <td>smith</td>
+            <td>50</td>
+        </tr>
+
+        <tr>
+            <td>eve</td>
+            <td>jackson</td>
+            <td>94</td>
+        </tr>
+
+        <tr>
+            <td>eve</td>
+            <td>jackson</td>
+            <td colspan="3">94</td>
+        </tr>
+     </table>
+</body>
+</html>
